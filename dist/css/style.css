@@ -9,15 +9,26 @@ body {
   font-family: "Montserrat";
 }
 body .container-message {
-  width: 80vw;
-  max-height: 300px;
+  width: 75vw;
   overflow: auto;
+  max-height: 250px;
+  padding: 50px;
 }
 body .container-chat {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   background-color: white;
+  padding-top: 25px;
+}
+body .container-chat .container-form-message form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin-bottom: 20px;
 }
 body .container-chat .container-form-message .message {
   margin: 0;
@@ -45,6 +56,7 @@ body h3 {
 body button {
   background-color: black;
   border: none;
+  margin-top: 30px;
   padding: 10px 25px;
 }
 body button a {
@@ -58,7 +70,22 @@ body form {
   justify-content: center;
   padding: 20px 50px;
 }
-body form input, body form textarea {
+body form textarea {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  width: 80vw;
+  height: 100px;
+  background-color: #0066ff;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+}
+body form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.795);
+}
+body form input {
   font-family: "Montserrat";
   color: black;
   font-size: 20px;
@@ -70,15 +97,24 @@ body form input, body form textarea {
   border: none;
   border-bottom: solid 1px #0066ff;
 }
-body form input:last-child, body form textarea:last-child {
+body form input:last-child {
   background-color: white !important;
   color: black;
   height: 40px;
   font-weight: 400;
 }
-body form input::placeholder, body form textarea::placeholder {
+body form input::placeholder {
   color: white;
   font-family: "Montserrat";
+}
+body .message-pseudo {
+  font-size: 12px;
+  margin-bottom: 0px !important;
+}
+body .message-msg {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 0px !important;
 }
 
 /*# sourceMappingURL=style.css.map */

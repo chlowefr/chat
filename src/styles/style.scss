@@ -11,20 +11,31 @@ body{
     font-family: 'Montserrat';
     
     .container-message{
-        width: 80vw;
-        max-height: 300px;
+        width: 75vw;
         overflow: auto;
+        max-height: 250px;
+        padding: 50px;
     }
 
     .container-chat{
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: center;
         background-color: white;
+        padding-top: 25px;
 
         .container-form-message{
             // background-color: $blue;
             
+            form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0;
+                margin-bottom: 20px;
+            }
 
             .message{
                 margin: 0;
@@ -58,6 +69,7 @@ body{
     button{
         background-color: black;
         border: none;
+        margin-top: 30px;
         padding: 10px 25px;
         a{
         text-decoration: none;
@@ -72,7 +84,24 @@ body{
         justify-content: center;
         padding: 20px 50px;
 
-        input, textarea{
+        textarea{
+            font-family: 'Montserrat';
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+            width: 80vw;
+            height: 100px;
+            background-color: $blue;
+            border: none;
+            padding: 10px;
+            font-size: 15px;
+
+            &::placeholder{
+                color: rgba(255, 255, 255, 0.795);
+            }
+        }
+
+        input{
             font-family: 'Montserrat';
             color: black;
             font-size: 20px;
@@ -95,4 +124,13 @@ body{
             }
         }
     }
+    .message-pseudo{
+        font-size: 12px;
+        margin-bottom: 0px!important;
     }
+    .message-msg{
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 0px!important;
+    }
+}
