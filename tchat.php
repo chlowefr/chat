@@ -40,7 +40,7 @@ while($result = $req->fetch(PDO::FETCH_ASSOC)){
 
     <div class="container-form-message">
         <form action="functions/setMessage.php" method="post">
-            <input type="message" placeholder="Message" name="message">
+            <textarea name="message" placeholder="Message"></textarea>
             <input type="submit" placeholder="Envoyer" value="Envoyer">
         </form>
         <?php

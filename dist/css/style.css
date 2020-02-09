@@ -8,6 +8,11 @@ body {
   flex-direction: column;
   font-family: "Montserrat";
 }
+body .container-message {
+  width: 80vw;
+  max-height: 300px;
+  overflow: auto;
+}
 body .container-chat {
   display: flex;
   flex-direction: column;
@@ -53,7 +58,7 @@ body form {
   justify-content: center;
   padding: 20px 50px;
 }
-body form input {
+body form input, body form textarea {
   font-family: "Montserrat";
   color: black;
   font-size: 20px;
@@ -65,13 +70,13 @@ body form input {
   border: none;
   border-bottom: solid 1px #0066ff;
 }
-body form input:last-child {
+body form input:last-child, body form textarea:last-child {
   background-color: white !important;
   color: black;
   height: 40px;
   font-weight: 400;
 }
-body form input::placeholder {
+body form input::placeholder, body form textarea::placeholder {
   color: white;
   font-family: "Montserrat";
 }

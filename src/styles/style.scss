@@ -10,6 +10,12 @@ body{
     flex-direction: column;
     font-family: 'Montserrat';
     
+    .container-message{
+        width: 80vw;
+        max-height: 300px;
+        overflow: auto;
+    }
+
     .container-chat{
         display: flex;
         flex-direction: column;
@@ -66,7 +72,7 @@ body{
         justify-content: center;
         padding: 20px 50px;
 
-        input{
+        input, textarea{
             font-family: 'Montserrat';
             color: black;
             font-size: 20px;
