@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+  background: #0066ff;
+  background: radial-gradient(circle, white 0%, #0066ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat";
+}
+body .container-chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: white;
+}
+body .container-chat .container-form-message .message {
+  margin: 0;
+}
+body h1 {
+  font-family: "Sigmar One", cursive;
+  color: #0066ff;
+  font-size: 85px;
+  line-height: 88px;
+  margin: 0;
+}
+body h2, body h3 {
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 20 0;
+  font-family: "Montserrat";
+}
+body h3 {
+  font-size: 20px;
+  font-family: "Sigmar One", cursive;
+  margin: 75px 0 0 0;
+}
+body button {
+  background-color: black;
+  border: none;
+  padding: 10px 25px;
+}
+body button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 50px;
+}
+body form input {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  height: 30px;
+  width: 250px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: solid 1px #0066ff;
+}
+body form input:last-child {
+  background-color: white !important;
+  color: black;
+  height: 40px;
+  font-weight: 400;
+}
+body form input::placeholder {
+  color: white;
+  font-family: "Montserrat";
+}
+
+/*# sourceMappingURL=style.css.map */
